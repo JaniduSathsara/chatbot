@@ -1,4 +1,3 @@
-import { API } from ".env";
 function btnSend() {
   const myHeaders = new Headers();
   myHeaders.append("Authorization", "Bearer");

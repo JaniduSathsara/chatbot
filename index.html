@@ -6,30 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echo - chatbot</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="card theme-primary" style="width: 18rem;">
-            <div class="card-body">
-                <h4 class="card-title">Echo - chatbot</h4>
-                <hr>
-<<<<<<< HEAD
-                <div>
-
-                </div>
-                <div><p id="txtuserInput"></p></div>
-                <div id="lblDisplay"></div>
-                <hr>
-                <input type="text" id="userInputText">
-                <input onclick="btnSend()" type="button" value="send">
+    <div class="chat">
+        <div class="head">
+            <div class="icon">🤖</div>
+            <div>
+                <h2>Echo AI</h2>
+                <p>Chatbot Assistant</p>
             </div>
         </div>
+        <div class="content">
+            <p id="txtuserInput"></p>
+            <div id="lblDisplay">
+            </div>
+        </div>
+        <div class="footer">
+            <input type="text" id="userInputText" placeholder="Type your message...">
+            <input onclick="btnSend()" type="button" value="➤" id="btnSend">
+        </div>
     </div>
-
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
