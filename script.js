@@ -21,6 +21,5 @@ function btnSend() {
     .then((result) =>
       document.getElementById("lblDisplay").innerHTML = marked.parse(result.output[1].content[0].text)
     );
-
-
+    
 }
