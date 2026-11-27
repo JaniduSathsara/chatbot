@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echo - chatbot</title>
+    <title>Echo - Chatbot</title>
 
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -19,20 +19,13 @@
                 <p>Chatbot Assistant</p>
             </div>
         </div>
-        <div class="content">
-            <p id="txtuserInput"></p>
-            <div id="lblDisplay">
-            </div>
-        </div>
+        <div class="content" id="lblDisplay"></div>
         <div class="footer">
-            <input class="txtFeild" type="text" id="userInputText" placeholder="Type your message...">
-            <input class="btnSend" onclick="btnSend()" type="button" value="➤" id="btnSend">
+            <input class="txtFeild" type="text" id="userInputText" placeholder="Message Echo..." autocomplete="off">
+            <button class="btnSend" onclick="btnSend()" id="btnSend">➤</button>
         </div>
     </div>
-
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
-
 </body>
 
 </html>

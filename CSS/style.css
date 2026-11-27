@@ -1,73 +1,91 @@
+
 body {
-    background: linear-gradient(135deg, #dbeafe, #f1f5f9);
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
+    background: #212121;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .chat {
-    width: 400px;
-    height: 600px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
+    width: 100%;
+    max-width: 850px;
+    height: 95vh;
+    background: #171717;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #333;
 }
 
 .head {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
-    color: white;
-    padding: 20px;
+    height: 75px;
+    background: #171717;
     display: flex;
     align-items: center;
     gap: 15px;
+    padding: 15px 25px;
+    border-bottom: 1px solid #333;
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
-    background: white;
+    width: 42px;
+    height: 42px;
+    background: #303030;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 28px;
+    font-size: 23px;
+}
+
+.content {
+    flex: 1;
+    padding: 25px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .footer {
+    padding: 15px 20px 20px;
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 15px;
-    background: #f8fafc;
+    border-top: 1px solid #333;
 }
 
 .txtFeild {
     flex: 1;
-    padding: 12px 15px;
-    border: 1px solid #cbd5e1;
-    border-radius: 25px;
+    height: 50px;
+    background: #303030;
+    border: none;
     outline: none;
-    font-size: 14px;
+    border-radius: 25px;
+    padding: 0 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.txtFeild::placeholder {
+    color: #999;
 }
 
 .btnSend {
-    width: 45px;
-    height: 45px;
+    width: 48px;
+    height: 48px;
     border: none;
     border-radius: 50%;
-    background: blue;
-    color: white;
+    background: white;
+    color: #171717;
     font-size: 22px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .btnSend:hover {
-    background: darkblue;
+    background: #cccccc;
+    transform: scale(1.05);
 }
-
-
